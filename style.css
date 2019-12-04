@@ -4,26 +4,37 @@ body {
 }
 
 .container {
-    height: 200px;
-    width: 1000px;
+    height: 120px;
+    width: 600px;
     margin: auto;
     position: absolute;
     top:0;bottom:0;left:0;right:0;
 }
 
-.flip-container {
+.fcrdcontainer {
     perspective: 1000;
     margin: 10px;
     float: left;
     cursor:pointer;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .fcrdcontainer .front .back {
-    width: 200px;
-    height: 500px;
+    width: 100px;
+    height: 100px;
     text-align: center;
     line-height: 100;
     border-radius: 3px;
     border: black 10px solid;
+    font-size: 10px;
 }
 

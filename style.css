@@ -27,7 +27,8 @@ i{
 }
 
 .flashcards li div {
-
+    width: 100%;
+    padding: 50% 0;
 }
 
 

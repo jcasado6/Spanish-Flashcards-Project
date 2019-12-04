@@ -42,20 +42,13 @@ i{
     border-radius: 5px;
 }
 
-.front, .back {
-	backface-visibility: hidden;
-    position: absolute;
+.front .back{
+    
 }
+
 
 .flashcards div.back{
-    transform: rotateY(180deg);
+    transform: rotateY(90deg);
 }
 
-.on {
-    transform: rotateY(-180deg);
-}
-
-.off {
-    transform: rotateY(0deg);
-}
 

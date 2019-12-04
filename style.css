@@ -1,0 +1,29 @@
+body {
+    background-color: blanchedalmond;
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+.container {
+    height: 200px;
+    width: 1000px;
+    margin: auto;
+    position: absolute;
+    top:0;bottom:0;left:0;right:0;
+}
+
+.flip-container {
+    perspective: 1000;
+    margin: 10px;
+    float: left;
+    cursor:pointer;
+}
+
+.fcrdcontainer .front .back {
+    width: 200px;
+    height: 500px;
+    text-align: center;
+    line-height: 100;
+    border-radius: 3px;
+    border: black 10px solid;
+}
+

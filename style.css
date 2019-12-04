@@ -4,11 +4,13 @@ body {
 }
 
 .container {
-    height: 120px;
-    width: 600px;
-    margin: auto;
-    position: absolute;
-    top:0;bottom:0;left:0;right:0;
+    width: 75%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+i{
+    padding-top: 20px;
 }
 
 .fcrdcontainer {
@@ -21,12 +23,12 @@ body {
     position: relative;
 }
 
-.front, .back {
+/* .front, .back {
 	backface-visibility: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
-}
+} */
 
 .fcrdcontainer .front .back {
     width: 100px;
@@ -34,7 +36,6 @@ body {
     text-align: center;
     line-height: 100;
     border-radius: 3px;
-    border: black 10px solid;
-    font-size: 10px;
+    font-size: 40px;
 }
 

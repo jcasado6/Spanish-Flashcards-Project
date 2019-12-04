@@ -18,10 +18,16 @@ i{
     padding: 0px;
 }
 
-.flashcards li{
+.flashcards li {
     text-align: center;
     width: 100%;
     padding: 50% 0;
+    text-transform: capitalize;
+    cursor: crosshair;
+}
+
+.flashcards li div {
+
 }
 
 

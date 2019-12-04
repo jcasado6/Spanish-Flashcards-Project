@@ -13,29 +13,16 @@ i{
     padding-top: 20px;
 }
 
-.fcrdcontainer {
-    perspective: 1000;
-    margin: 10px;
-    float: left;
-    cursor:pointer;
-    transition: 0.5s;
-    transform-style: preserve-3d;
-    position: relative;
+.flashcards {
+    list-style-type: none;
+    padding: 0px;
 }
 
-/* .front, .back {
-	backface-visibility: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
-} */
-
-.fcrdcontainer .front .back {
-    width: 100px;
-    height: 100px;
+.flashcards li{
     text-align: center;
-    line-height: 100;
-    border-radius: 3px;
-    font-size: 40px;
+    width: 100%;
+    padding: 50% 0;
 }
+
+
 

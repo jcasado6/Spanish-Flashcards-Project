@@ -3,6 +3,9 @@ body {
     font-family: 'Sulphur Point', sans-serif;
 }
 
+.header{
+    text-align: center;
+}
 /* holding the cards together */
 .container { 
     width: 85%;
@@ -10,10 +13,12 @@ body {
     margin: 150px auto;
 }
 
+/* ICON */
 i{
     padding-top: 20px;
 }
 
+/* UNORDERED */
 .flashcards {
     list-style-type: none;
     padding: 0px;
@@ -23,17 +28,17 @@ i{
 /* individual cards */
 .flashcards li {
     width: 20%;
-    margin: 80px 0px;
+    /* margin: auto; */
     position: relative;
     float: left;
     display: block;
     box-sizing: border-box;
 }
 
-/* front and back */
+/* front and back and size*/
 .flashcards li div {
-    width: 90%;
-    padding: 50% 0;
+    width: 95%;
+    padding: 80% 0;
     text-align: center;
     cursor: crosshair;
     border: 1px solid black;
@@ -43,6 +48,7 @@ i{
     border-radius: 5px;
 }
 
+ /* flipping */
 .flashcards div.back{
     transform: rotateY(90deg);
 }
@@ -52,11 +58,11 @@ i{
 }
 
 .flashcards li:hover div.front{
-    animation: flip 0.5s ease-in forwards;
+    animation: flip 0.6s ease-in forwards;
 }
 
 .flashcards li:hover div.back{
-    animation: flip 0.5s ease-out forwards reverse;
+    animation: flip 0.6s ease-in forwards reverse;
 }
 
 @keyframes flip {

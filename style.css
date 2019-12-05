@@ -53,7 +53,7 @@ i{
     transform: rotateY(90deg);
 }
 
-.flashcards div.front{
+/* .flashcards div.front{
     position: absolute;
 }
 
@@ -68,6 +68,14 @@ i{
 @keyframes flip {
     0% {transform: rotateY(0deg)}
     100% {transform: rotateY(90deg)}
+} */
+
+.on {
+    transform: rotateY(0deg);
+}
+
+.off {
+    transform: rotateY(0deg);
 }
 
 

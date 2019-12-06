@@ -3,12 +3,6 @@ body {
     font-family: 'Sulphur Point', sans-serif;
 }
 
-/* .header{
-    text-align: center;
-    font-family: 'Sulphur Point', sans-serif;
-    font-size: 30px;
-    margin: -30px;
-} */
 
 h1{
     text-align: center;
@@ -247,9 +241,7 @@ i{
 }
 
 @media screen and (max-width: 320px) {
-    body {
-      background-color: lightgreen;
-    }
+
     h1{
         text-align: center;
         font-family: 'Sulphur Point', sans-serif;
@@ -263,42 +255,15 @@ i{
         font-size: 15px;
         margin: 6px 10px;
     }
-  }
 
-@media screen and (min-width: 768px) {
-  
-    body {
-      background-color: lightgreen;
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 65px;
     }
-  }
+}
 
-/* .card {
-    perspective: 1000px;
-    transform-style: preserve-3d;
-    transition: transform .5s;
-    transform: scale(1);
-} */
-
-/* .card:active{
-    transform: scale(0.97);
-   transition: transform .2s;
-} */
-
-/* .card.flip{
-    transform: rotateY(180deg);
-} */
-
-/* .front .back{
-    backface-visibility: hidden;
-    /* position: absolute; */ 
-
-/* .front{
-    transform: rotateY(180deg);
-} */
-/* 
-.back {
-    position: absolute;
-} */
 
 
 

@@ -38,7 +38,7 @@
 
 
 let household = [
-    {english: "battery", spanish: "bateria"},
+    {english: "battery", spanish: "bateria",},
     {english: "broom", spanish: "escoba"},
     {english: "computer", spanish: "computadora"},
     {english: "chair", spanish: "silla"},
@@ -54,7 +54,7 @@ let animals = [
 ]
 
 let colors = [
-    {english: "red", spanish: "rojo"},
+    {english: "red", spanish: "rojo",},
     {english: "blue", spanish: "azul"},
     {english: "green", spanish: "verde"},
     {english: "yellow", spanish: "amarillo"},
@@ -98,71 +98,170 @@ let colors = [
 //     }
 // }
 
-let card1 = document.querySelector('.card1')
+// let card1 = document.querySelector('.card1')
 
-function change (evt) {
-    evt.preventDefault
-    document.querySelector('#front1').innerHTML = household[0].spanish
-}
+// function change (evt) {
+//     evt.preventDefault
+//     document.querySelector('#front1').innerHTML = household[0].spanish
+// }
 
-function revert (evt) {
-    evt.preventDefault
-    document.querySelector('#front1').innerHTML = household[0].english
-}
-card1.addEventListener('click', change)
-card1.addEventListener('dblclick', revert)
-
-
-
-let card2 = document.querySelector('.card2')
-
-function change2 (evt) {
-    evt.preventDefault
-    document.querySelector('#front2').innerHTML = household[1].spanish
-}
-
-function revert2 (evt) {
-    evt.preventDefault
-    document.querySelector('#front2').innerHTML = household[1].english
-}
-card2.addEventListener('click', change2)
-card2.addEventListener('dblclick', revert2)
+// function revert (evt) {
+//     evt.preventDefault
+//     document.querySelector('#front1').innerHTML = household[0].english
+// }
+// card1.addEventListener('click', change)
+// card1.addEventListener('dblclick', revert)
 
 
 
-let card3 = document.querySelector('.card3')
+// let card2 = document.querySelector('.card2')
 
-function change3 (evt) {
-    evt.preventDefault
-    document.querySelector('#front3').innerHTML = household[2].spanish
-}
+// function change2 (evt) {
+//     evt.preventDefault
+//     document.querySelector('#front2').innerHTML = household[1].spanish
+// }
 
-function revert3 (evt) {
-    evt.preventDefault
-    document.querySelector('#front3').innerHTML = household[2].english
-}
-card3.addEventListener('click', change3)
-card3.addEventListener('dblclick', revert3)
-
-
+// function revert2 (evt) {
+//     evt.preventDefault
+//     document.querySelector('#front2').innerHTML = household[1].english
+// }
+// card2.addEventListener('click', change2)
+// card2.addEventListener('dblclick', revert2)
 
 
-let grabListItems = document.querySelectorAll('li')
+
+// let card3 = document.querySelector('.card3')
+
+// function change3 (evt) {
+//     evt.preventDefault
+//     document.querySelector('#front3').innerHTML = household[2].spanish
+// }
+
+// function revert3 (evt) {
+//     evt.preventDefault
+//     document.querySelector('#front3').innerHTML = household[2].english
+// }
+// card3.addEventListener('click', change3)
+// card3.addEventListener('dblclick', revert3)
 
 
-let grabButton = document.querySelector('button')
 
-    grabButton.addEventListener("click", function(evt){
-        evt.preventDefault()
-        console.log('click')
 
-        for (let i = 0; i < grabListItems.length; i++) {
-            let grabListFront = grabListItems[i].front
-            let grabListBack = grabListItems[i].back
+// let grabListItems = document.querySelectorAll('li')
+// let grabButton = document.querySelector('.nextset')
 
-            console.log(grabListItems)
-            // grabListFront.innerHTML = colors[i].english
-            // grabListBack.innerHTML = colors[i].spanish
-            
-        }
-    })
+
+// let grabImg = document.querySelector('img')
+// let grabListFront = document.querySelectorAll('.front')
+// let grabListBack = document.querySelectorAll('.back')
+
+    // grabButton.addEventListener("click", function(evt){
+    //     evt.preventDefault()
+    //     console.log('click')
+
+    //     for (let i = 0; i < grabListItems.length; i++) {
+    //         let grabListFront = document.querySelector('#front1')
+    //         let grabListBack = document.querySelector('#back1')
+    //         console.log(grabListItems)
+    //         grabListFront.innerHTML = colors[0].english
+    //         grabListBack.innerHTML = colors[0].spanish
+    //         grabListFront.style.backgroundColor = 'red'
+    //         grabListBack.style.backgroundColor = 'red'
+    //         // grabListFront.innerHTML = colors[0].pic
+    //         // grabListBack.innerHTML = colors[0].pic
+    //         // grabImg.src = colors[0].img
+    //     }
+    // })
+
+    // grabButton.addEventListener("click", function(evt){
+    //     evt.preventDefault()
+    //     console.log('click')
+
+    //     for (let i = 0; i < grabListItems.length; i++) {
+    //         let grabListFront = document.querySelector('#front2')
+    //         let grabListBack = document.querySelector('#back2')
+    //         console.log(grabListItems)
+    //         grabListFront.innerHTML = colors[1].english
+    //         grabListBack.innerHTML = colors[1].spanish
+    //         grabListFront.style.backgroundColor = 'blue'
+    //         grabListBack.style.backgroundColor = 'blue'
+    //     }
+    // })
+
+    // grabButton.addEventListener("click", function(evt){
+    //     evt.preventDefault()
+    //     console.log('click')
+
+    //     for (let i = 0; i < grabListItems.length; i++) {
+    //         let grabListFront = document.querySelector('#front3')
+    //         let grabListBack = document.querySelector('#back3')
+    //         console.log(grabListItems)
+    //         grabListFront.innerHTML = colors[2].english
+    //         grabListBack.innerHTML = colors[2].spanish
+    //         grabListFront.style.backgroundColor = 'green'
+    //         grabListBack.style.backgroundColor = 'green'
+    //     }
+    // })
+
+    // grabButton.addEventListener("click", function(evt){
+    //     evt.preventDefault()
+    //     console.log('click')
+
+    //     for (let i = 0; i < grabListItems.length; i++) {
+    //         let grabListFront = document.querySelector('#front4')
+    //         let grabListBack = document.querySelector('#back4')
+    //         console.log(grabListItems)
+    //         grabListFront.innerHTML = colors[3].english
+    //         grabListBack.innerHTML = colors[3].spanish
+    //         grabListFront.style.backgroundColor = 'yellow'
+    //         grabListBack.style.backgroundColor = 'yellow'
+    //     }
+    // })
+
+    // grabButton.addEventListener("click", function(evt){
+    //     evt.preventDefault()
+    //     console.log('click')
+
+    //     for (let i = 0; i < grabListItems.length; i++) {
+    //         let grabListFront = document.querySelector('#front5')
+    //         let grabListBack = document.querySelector('#back5')
+    //         console.log(grabListItems)
+    //         grabListFront.innerHTML = colors[4].english
+    //         grabListBack.innerHTML = colors[4].spanish
+    //         grabListFront.style.backgroundColor = 'orange'
+    //         grabListBack.style.backgroundColor = 'orange'
+    //     }
+    // })
+
+let grabhh = document.querySelector('.hh')
+let firstSet = document.querySelector('.flashcards1')
+
+let grabAnimals = document.querySelector('.animals')
+let secondSet = document.querySelector('.flashcards2')
+
+let grabColors = document.querySelector('.colors')
+let thirdSet = document.querySelector('.flashcards3')
+
+grabhh.addEventListener('click', function(evt){
+    evt.preventDefault()
+    firstSet.style.display = "block"
+    secondSet.style.display = "none"
+    thirdSet.style.display = "none"
+})
+
+
+grabAnimals.addEventListener('click', function(evt){
+    evt.preventDefault()
+    secondSet.style.display = "block"
+    firstSet.style.display = "none"
+    thirdSet.style.display = "none"
+})
+
+
+grabColors.addEventListener('click', function(evt){
+    evt.preventDefault()
+    thirdSet.style.display = "block"
+    secondSet.style.display = "none"
+    firstSet.style.display = "none"
+})
+   

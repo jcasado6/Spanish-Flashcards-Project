@@ -10,8 +10,9 @@ body {
 .container { 
     width: 85%;
     max-width: 1200px;
-    margin: 150px auto;
+    margin: 40px auto 40px;
 }
+
 
 /* ICON */
 i{
@@ -19,14 +20,40 @@ i{
 }
 
 /* UNORDERED */
-.flashcards {
+.flashcards1 {
     list-style-type: none;
-    padding: 0px;
-    
+    padding: 0px;  
+    display: none; 
+}
+.flashcards2 {
+    list-style-type: none;
+    padding: 0px;   
+    display: none;
+}
+.flashcards3 {
+    list-style-type: none;
+    padding: 0px;  
+    display: none; 
 }
 
 /* individual cards */
-.flashcards li {
+.flashcards1 li {
+    width: 20%;
+    /* margin: auto; */
+    position: relative;
+    float: left;
+    display: block;
+    box-sizing: border-box;
+}
+.flashcards2 li {
+    width: 20%;
+    /* margin: auto; */
+    position: relative;
+    float: left;
+    display: block;
+    box-sizing: border-box;
+}
+.flashcards3 li {
     width: 20%;
     /* margin: auto; */
     position: relative;
@@ -36,7 +63,7 @@ i{
 }
 
 /* front and back and size*/
-.flashcards li div {
+.flashcards1 li div {
     width: 95%;
     padding: 80% 0;
     text-align: center;
@@ -46,38 +73,153 @@ i{
     line-height: 0;
     letter-spacing: 1px;
     border-radius: 5px;
+    animation-duration: .5s;
+    animation-name: slidein;
+}
+/* front and back and size*/
+.flashcards2 li div {
+    width: 95%;
+    padding: 80% 0;
+    text-align: center;
+    cursor: crosshair;
+    border: 1px solid black;
+    text-transform: capitalize;
+    line-height: 0;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    animation-duration: .5s;
+    animation-name: slidein;
+}
+/* front and back and size*/
+.flashcards3 li div {
+    width: 95%;
+    padding: 80% 0;
+    text-align: center;
+    cursor: crosshair;
+    border: 1px solid black;
+    text-transform: capitalize;
+    line-height: 0;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    animation-duration: .5s;
+    animation-name: slidein;
 }
 
+
  /* flipping */
-.flashcards div.back{
+.flashcards1 div.back{
+    transform: rotateY(90deg);
+}
+.flashcards2 div.back{
+    transform: rotateY(90deg);
+}
+.flashcards3 div.back{
     transform: rotateY(90deg);
 }
 
-/* .flashcards div.front{
+
+.flashcards1 div.front{
+    position: absolute;
+}
+.flashcards2 div.front{
+    position: absolute;
+}
+.flashcards3 div.front{
     position: absolute;
 }
 
-.flashcards li:hover div.front{
+
+
+.flashcards1 li:hover div.front{
+    animation: flip 0.6s ease-in forwards;
+}
+.flashcards2 li:hover div.front{
+    animation: flip 0.6s ease-in forwards;
+}
+.flashcards3 li:hover div.front{
     animation: flip 0.6s ease-in forwards;
 }
 
-.flashcards li:hover div.back{
+
+
+.flashcards1 li:hover div.back{
+    animation: flip 0.6s ease-in forwards reverse;
+}
+.flashcards2 li:hover div.back{
+    animation: flip 0.6s ease-in forwards reverse;
+}
+.flashcards3 li:hover div.back{
     animation: flip 0.6s ease-in forwards reverse;
 }
 
 @keyframes flip {
     0% {transform: rotateY(0deg)}
     100% {transform: rotateY(90deg)}
-} */
+}
 
-.on {
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+/* .on {
     transform: rotateY(0deg);
 }
 
 .off {
     transform: rotateY(0deg);
+} */
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 600px;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 60px auto 20px;
 }
 
+.colors {
+    /* position:relative; */
+    font-family: 'Sulphur Point', sans-serif;
+    width: 100px;
+    height:30px; 
+    border:solid 2px cornflowerblue;
+    /* margin:0 910px; */
+    text-align:center;
+    transition: all 0.3s;
+}
+
+.hh {
+    /* position:relative; */
+    font-family: 'Sulphur Point', sans-serif;
+    width: 100px;
+    height:30px;
+    border:solid 2px cornflowerblue;
+    /* margin: 0 910px; */
+    text-align:center;
+    transition: all 0.3s;
+}
+
+.animals {
+    /* position:relative; */
+    font-family: 'Sulphur Point', sans-serif;
+    height: 30px;
+    width: 100px;
+    /* height:30px; */
+    border:solid 2px cornflowerblue;
+    /* margin:-10px auto; */
+    text-align:center;
+    transition: all 0.3s;
+}
 
 
 

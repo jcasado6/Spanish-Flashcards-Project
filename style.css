@@ -5,13 +5,30 @@ body {
 
 .header{
     text-align: center;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 30px;
+    margin: -30px;
 }
+
+h1{
+    text-align: center;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 60px;
+    margin: 0 10px;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 30px;
+}
+
 /* holding the cards together */
 .container { 
     width: 85%;
     max-width: 1200px;
     margin: 40px auto 40px;
-    /* padding */
+    padding: 0 10px 60px 0;
 }
 
 
@@ -19,6 +36,7 @@ body {
 i{
     padding-top: 20px;
 }
+
 
 /* UNORDERED */
 .flashcards1 {
@@ -36,6 +54,8 @@ i{
     padding: 0px;  
     display: none; 
 }
+
+
 
 /* individual cards */
 .flashcards1 li {
@@ -63,18 +83,21 @@ i{
     box-sizing: border-box;
 }
 
+
+
+
 /* front and back and size*/
 .flashcards1 li div {
     width: 95%;
     padding: 80% 0;
     text-align: center;
-    cursor: crosshair;
+    cursor: pointer;
     border: 1px solid black;
     text-transform: capitalize;
     line-height: 0;
     letter-spacing: 1px;
     border-radius: 5px;
-    animation-duration: .5s;
+    animation-duration: 1s;
     animation-name: slidein;
 }
 /* front and back and size*/
@@ -82,13 +105,13 @@ i{
     width: 95%;
     padding: 80% 0;
     text-align: center;
-    cursor: crosshair;
+    cursor: pointer;
     border: 1px solid black;
     text-transform: capitalize;
     line-height: 0;
     letter-spacing: 1px;
     border-radius: 5px;
-    animation-duration: .5s;
+    animation-duration: 1s;
     animation-name: slidein;
 }
 /* front and back and size*/
@@ -96,15 +119,17 @@ i{
     width: 95%;
     padding: 80% 0;
     text-align: center;
-    cursor: crosshair;
+    cursor: pointer;
     border: 1px solid black;
     text-transform: capitalize;
     line-height: 0;
     letter-spacing: 1px;
     border-radius: 5px;
-    animation-duration: .5s;
+    animation-duration: 1s;
     animation-name: slidein;
 }
+
+
 
 
  /* flipping */
@@ -117,6 +142,8 @@ i{
 .flashcards3 div.back{
     transform: rotateY(90deg);
 }
+
+
 
 
 .flashcards1 div.front{
@@ -153,12 +180,14 @@ i{
     animation: flip 0.6s ease-in forwards reverse;
 }
 
+
+
 @keyframes flip {
     0% {transform: rotateY(0deg)}
     100% {transform: rotateY(90deg)}
 }
 
-/* @keyframes slidein {
+@keyframes slidein {
     from {
       margin-left: 100%;
       width: 300%; 
@@ -168,7 +197,7 @@ i{
       margin-left: 0%;
       width: 100%;
     }
-  } */
+  }
 
 /* .on {
     transform: rotateY(0deg);
@@ -191,9 +220,10 @@ i{
 .colors {
     /* position:relative; */
     font-family: 'Sulphur Point', sans-serif;
-    width: 100px;
-    height:30px; 
+    width: 150px;
+    height: 60px; 
     border:solid 2px cornflowerblue;
+    border-radius: 15px;
     /* margin:0 910px; */
     text-align:center;
     transition: all 0.3s;
@@ -202,9 +232,10 @@ i{
 .hh {
     /* position:relative; */
     font-family: 'Sulphur Point', sans-serif;
-    width: 100px;
-    height:30px;
+    width: 150px;
+    height: 60px;
     border:solid 2px cornflowerblue;
+    border-radius: 15px;
     /* margin: 0 910px; */
     text-align:center;
     transition: all 0.3s;
@@ -213,10 +244,11 @@ i{
 .animals {
     /* position:relative; */
     font-family: 'Sulphur Point', sans-serif;
-    height: 30px;
-    width: 100px;
+    height: 60px;
+    width: 150px;
     /* height:30px; */
     border:solid 2px cornflowerblue;
+    border-radius: 15px;
     /* margin:-10px auto; */
     text-align:center;
     transition: all 0.3s;

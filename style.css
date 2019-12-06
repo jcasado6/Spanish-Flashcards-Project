@@ -21,6 +21,7 @@ h3 {
     text-align: center;
     font-family: 'Sulphur Point', sans-serif;
     font-size: 30px;
+    margin: 6px 10px;
 }
 
 /* holding the cards together */
@@ -89,7 +90,7 @@ i{
 /* front and back and size*/
 .flashcards1 li div {
     width: 95%;
-    padding: 80% 0;
+    padding: 77% 0;
     text-align: center;
     cursor: pointer;
     border: 1px solid black;
@@ -103,7 +104,7 @@ i{
 /* front and back and size*/
 .flashcards2 li div {
     width: 95%;
-    padding: 80% 0;
+    padding: 77% 0;
     text-align: center;
     cursor: pointer;
     border: 1px solid black;
@@ -117,7 +118,7 @@ i{
 /* front and back and size*/
 .flashcards3 li div {
     width: 95%;
-    padding: 80% 0;
+    padding: 85% 0;
     text-align: center;
     cursor: pointer;
     border: 1px solid black;
@@ -130,9 +131,7 @@ i{
 }
 
 
-
-
- /* flipping */
+/* flipping */
 .flashcards1 div.back{
     transform: rotateY(90deg);
 }
@@ -141,7 +140,7 @@ i{
 }
 .flashcards3 div.back{
     transform: rotateY(90deg);
-}
+} 
 
 
 
@@ -178,7 +177,7 @@ i{
 }
 .flashcards3 li:hover div.back{
     animation: flip 0.6s ease-in forwards reverse;
-}
+} 
 
 
 
@@ -199,13 +198,6 @@ i{
     }
   }
 
-/* .on {
-    transform: rotateY(0deg);
-}
-
-.off {
-    transform: rotateY(0deg);
-} */
 
 .buttons{
     display: flex;
@@ -214,13 +206,13 @@ i{
     width: 600px;
     justify-content: center;
     justify-content: space-around;
-    margin: 60px auto 20px;
+    margin: 30px auto 0px;
 }
 
 .colors {
     /* position:relative; */
     font-family: 'Sulphur Point', sans-serif;
-    width: 150px;
+    width: 175px;
     height: 60px; 
     border:solid 2px cornflowerblue;
     border-radius: 15px;
@@ -232,7 +224,7 @@ i{
 .hh {
     /* position:relative; */
     font-family: 'Sulphur Point', sans-serif;
-    width: 150px;
+    width: 175px;
     height: 60px;
     border:solid 2px cornflowerblue;
     border-radius: 15px;
@@ -245,7 +237,7 @@ i{
     /* position:relative; */
     font-family: 'Sulphur Point', sans-serif;
     height: 60px;
-    width: 150px;
+    width: 175px;
     /* height:30px; */
     border:solid 2px cornflowerblue;
     border-radius: 15px;
@@ -254,7 +246,33 @@ i{
     transition: all 0.3s;
 }
 
+/* .card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    transform: scale(1);
+} */
 
+/* .card:active{
+    transform: scale(0.97);
+   transition: transform .2s;
+} */
+
+/* .card.flip{
+    transform: rotateY(180deg);
+} */
+
+/* .front .back{
+    backface-visibility: hidden;
+    /* position: absolute; */ 
+
+/* .front{
+    transform: rotateY(180deg);
+} */
+/* 
+.back {
+    position: absolute;
+} */
 
 
 

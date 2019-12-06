@@ -9,7 +9,7 @@ This project is was developed in order to help the user study simple words in sp
 - Vanilla JavaScript
 
 ## Getting Started 
-The user will select between a category of words they would like to study 
+Follow the link (https://jcasado6.github.io/Spanish-Flashcards-Project/) and select the category you would like to study. Hover over the desired card and it will flip and give the translation for the word. The use can change categories when they desire. 
 
 ## Approach Taken 
 The cards were built with an unordered lists of divs then styling them to remove their bullet points and styling them to their individual size. DOM manipulation and Event listeners were utilized on the category buttons in order to set the the display of the selected category to blcok and the others to none. 

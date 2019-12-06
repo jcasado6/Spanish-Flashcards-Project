@@ -1,4 +1,34 @@
-// console.log('hello')
+let grabhh = document.querySelector('.hh')
+let firstSet = document.querySelector('.flashcards1')
+
+let grabAnimals = document.querySelector('.animals')
+let secondSet = document.querySelector('.flashcards2')
+
+let grabColors = document.querySelector('.colors')
+let thirdSet = document.querySelector('.flashcards3')
+
+grabhh.addEventListener('click', function(evt){
+    evt.preventDefault()
+    firstSet.style.display = "block"
+    secondSet.style.display = "none"
+    thirdSet.style.display = "none"
+})
+
+
+grabAnimals.addEventListener('click', function(evt){
+    evt.preventDefault()
+    secondSet.style.display = "block"
+    firstSet.style.display = "none"
+    thirdSet.style.display = "none"
+})
+
+
+grabColors.addEventListener('click', function(evt){
+    evt.preventDefault()
+    thirdSet.style.display = "block"
+    secondSet.style.display = "none"
+    firstSet.style.display = "none"
+})
 
 // let cards = document.querySelector('.flashcards');
 
@@ -37,29 +67,29 @@
 
 
 
-let household = [
-    {english: "battery", spanish: "bateria",},
-    {english: "broom", spanish: "escoba"},
-    {english: "computer", spanish: "computadora"},
-    {english: "chair", spanish: "silla"},
-    {english: "soap", spanish: "jabon"},
-]
+// let household = [
+//     {english: "battery", spanish: "bateria",},
+//     {english: "broom", spanish: "escoba"},
+//     {english: "computer", spanish: "computadora"},
+//     {english: "chair", spanish: "silla"},
+//     {english: "soap", spanish: "jabon"},
+// ]
 
-let animals = [
-    {english: "frog", spanish: "rana"},
-    {english: "cat", spanish: "gato"},
-    {english: "dog", spanish: "perro"},
-    {english: "pig", spanish: "cerdo"},
-    {english: "horse", spanish: "caballo"},
-]
+// let animals = [
+//     {english: "frog", spanish: "rana"},
+//     {english: "cat", spanish: "gato"},
+//     {english: "dog", spanish: "perro"},
+//     {english: "pig", spanish: "cerdo"},
+//     {english: "horse", spanish: "caballo"},
+// ]
 
-let colors = [
-    {english: "red", spanish: "rojo",},
-    {english: "blue", spanish: "azul"},
-    {english: "green", spanish: "verde"},
-    {english: "yellow", spanish: "amarillo"},
-    {english: "orange", spanish: "anaranjado"},
-]
+// let colors = [
+//     {english: "red", spanish: "rojo",},
+//     {english: "blue", spanish: "azul"},
+//     {english: "green", spanish: "verde"},
+//     {english: "yellow", spanish: "amarillo"},
+//     {english: "orange", spanish: "anaranjado"},
+// ]
 
 // let grabCards = document.querySelector('.card1')
 // console.log(grabCards)
@@ -233,35 +263,3 @@ let colors = [
     //     }
     // })
 
-let grabhh = document.querySelector('.hh')
-let firstSet = document.querySelector('.flashcards1')
-
-let grabAnimals = document.querySelector('.animals')
-let secondSet = document.querySelector('.flashcards2')
-
-let grabColors = document.querySelector('.colors')
-let thirdSet = document.querySelector('.flashcards3')
-
-grabhh.addEventListener('click', function(evt){
-    evt.preventDefault()
-    firstSet.style.display = "block"
-    secondSet.style.display = "none"
-    thirdSet.style.display = "none"
-})
-
-
-grabAnimals.addEventListener('click', function(evt){
-    evt.preventDefault()
-    secondSet.style.display = "block"
-    firstSet.style.display = "none"
-    thirdSet.style.display = "none"
-})
-
-
-grabColors.addEventListener('click', function(evt){
-    evt.preventDefault()
-    thirdSet.style.display = "block"
-    secondSet.style.display = "none"
-    firstSet.style.display = "none"
-})
-   

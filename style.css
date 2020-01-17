@@ -86,7 +86,7 @@ i{
     letter-spacing: 1px;
     border-radius: 5px;
     animation-duration: 1s;
-    animation-name: slidein;
+    /* animation-name: slidein; */
 }
 
 .flashcards2 li div {
@@ -100,7 +100,7 @@ i{
     letter-spacing: 1px;
     border-radius: 5px;
     animation-duration: 1s;
-    animation-name: slidein;
+    /* animation-name: slidein; */
 }
 
 .flashcards3 li div {
@@ -114,7 +114,7 @@ i{
     letter-spacing: 1px;
     border-radius: 5px;
     animation-duration: 1s;
-    animation-name: slidein;
+    /* animation-name: slidein; */
 }
 
 
